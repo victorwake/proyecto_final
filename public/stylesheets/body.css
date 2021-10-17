@@ -1,0 +1,79 @@
+header{
+    background-color: #1d1d1d;
+    padding: 1em 0;
+}
+
+header h1{
+    color: cornsilk;
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight: 100;
+    display: inline-block;
+    position: relative;
+    bottom: 30px;
+}
+
+
+body {
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.holder{
+    width: 960px;
+    margin: 0 auto;
+    
+}
+
+
+/*inicio bandas*/
+
+
+/*fin bandas*/
+
+/*inicio footer*/
+footer{
+    /*background-color: darkgrey;*/
+    clear: both;
+    color: #ffffff;
+    padding: 1em 0;
+    margin-top: 2em;
+    text-align: center;
+    background-image: url(../images/background-footer.png);
+    background-size: cover;
+    bottom: 0;  
+    position:relative;
+    width: 100%;
+}
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+/*Fin footer*/
+
+/*videos*/
+.video-responsive {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	position: relative;
+	}
+.video-responsive iframe, .video-responsive object, .video-responsive embed {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	}

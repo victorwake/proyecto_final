@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Pinto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/body.css">
+    <link rel="stylesheet" href="/stylesheets/normalize.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css'>
+
+
+
+</head>
+<body>
+  
+<!-- partial:index.partial.html -->
+<header>
+  <div class="holder">
+            {{!-- <img src="" width="100" alt="Victor Pinto"> --}}
+        </div>
+</header>
+
+<section class="navigation">
+  <div class="nav-container">
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li><a href="/" class="{{#if isHome}}activo{{/if}}">Home</a></li>
+        <li><a href="/bandas" class="{{#if isBandas}}activo{{/if}}">Bandas</a></li>
+        <li><a href="/videos" class="{{#if isVideos}}activo{{/if}}">Videos</a></li>
+        <li><a href="/musica" class="{{#if isMusica}}activo{{/if}}">Musica</a></li>
+        <li><a href="/galeria" class="{{#if isGaleria}}activo{{/if}}">Galeria</a></li>
+        <li><a href="/novedades" class="{{#if isNovedades}}activo{{/if}}">Novedades</a></li>
+        <li><a href="/contacto" class="{{#if isContacto}}activo{{/if}}">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+{{!-- <main class="holder"></main> --}}
+{{{body}}}
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script  src="/javascripts/script.js"></script>
+  <script  src="/javascripts/galeria.js"></script>
+  
+  
+      <footer>
+         <div class="container__footer">
+        <div class="box__copyright">
+            <hr>
+             <p>Diseñado por: Victor Pinto - &copy;2021</p>
+             </div>
+      </footer>
+  </body>  
+</html>

@@ -1,0 +1,182 @@
+/* .formularioc{
+    display: flex;
+    
+}
+form{
+    display: flex;
+    flex-flow: column;
+    background-color: white;
+    width: 40%;
+    height: 80%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0,0,0,0.8) 0px 0px 50px;
+    border-radius: 10px;
+}
+
+input, textarea{
+    border: none;
+    resize: none;
+    outline: none;
+    padding: 15px 0px;
+    width: 80%;
+    margin: 20px;
+    transition: all 300ms;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+input:focus, textarea:focus{
+    border-bottom-color: #9e0c0c ;
+}
+
+
+button{
+    border: none;
+    outline: none;
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgb(88, 87, 88)), color-stop(17%, rgba(88, 87, 88)), color-stop(58%, rgb(143, 142, 143)), color-stop(100%, rgb(172, 170, 170)));
+    padding: 15px;
+    width: 200px;
+    color: white;
+    border-radius: 2px;
+    box-shadow: rgba(0,0,0,0.7) 0px 0px 10px;
+    margin: 20px 0px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+button:hover{
+    transform: scale(1.05);
+    box-shadow: rgba(0,0,0,0.9) 0px 0px 10px;
+} */
+
+
+/* * {
+	box-sizing: border-box;
+} */
+/* body {
+	font-family: 'Nunito', sans-serif;
+	color: #384047;
+	padding: 40px 0 60px;
+} */
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px dotted rgba(0, 0, 0, 0.2);
+  margin: 50px 0;
+}
+h2{
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+form {
+	margin-bottom: 60px;
+}
+
+/************
+Form Fields
+************/
+input,
+textarea {
+  font-size: 1em;
+  color: black;
+  font-weight: 300; 
+  width: 100%;
+  border: none;
+  height: auto;
+  padding: 15px;
+  outline: 0;
+  margin-bottom: 1.2em;
+  border-radius: .3em;
+  border-bottom: 3px solid rgba(0,0,0, 0.05);
+  background-color: #e8eeef;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em; 
+}
+
+/******************
+Attribute Selectors
+******************/
+.form-contact {
+	padding: 24px 24px;
+	background: #f4f7f8;
+}
+
+#container {
+	max-width: 500px;
+	margin: auto;
+}
+input[type="email"] {
+	background: #fdfee6;
+}
+/*target all the buttons*/
+
+
+a[target="_blank"] {
+  color: #39add1;
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
+
+
+/********
+Classes
+********/
+.br {
+  border-radius: .5em;
+}
+.avatar {
+  display: block;
+  margin: 0 auto 2em;
+}
+.rounded {
+  border-radius: 50%;
+}
+
+.btn {
+  cursor: pointer;
+  font-size: .875em;
+	font-weight: 400;
+	color: #fff;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-transform: uppercase;
+}
+.btn:hover {
+  opacity: .75;
+}
+.default {
+  background-color: #6f7272;;
+}
+.error {
+  background-color: #ff784f;
+}
+
+@media (max-width: 768px) {
+	#container {
+		width: 92%;
+	}
+}
+
+@media (min-width: 769px) {
+  .inln {
+    width: auto;
+    display: inline-block;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .inln {
+   flex-grow: .4;
+  }
+}
+
+/* targets a direct child of an element */
+form > a {
+  font-size: .7em;
+}

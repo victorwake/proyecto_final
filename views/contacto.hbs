@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="stylesheets/contact.css" />
+
+{{! <div class="container">
+   <div class="formularioc"></div>
+        <form>
+            <h1>Contactanos</h1>
+            <input type="text" value="Nombre" placeholder="Nombre">
+            <input type="text" value="Correo" placeholder="Correo">
+            <textarea>Mensaje</textarea>
+            <button>Enviar Mensaje</button>
+        </form>
+    </div>
+</div> }}
+
+<div id="container">
+  <form action="/contacto" method="post" class="form-contact br">
+    <h2>Contacto</h2>
+
+    <label for="name">Nombre:</label>
+    <input type="text" name="nombre"  id="name_input" required />
+
+    <label for="email">Email:</label>
+    <input
+      type="email"
+	  name="email"
+      
+      placeholder="email@website.com"
+      id="email_input"
+      required
+    />
+
+	 <label for="telefono">Telefono:</label>
+    <input type="text" name="telefono"  id="telefono_input" required />
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea  name="mensaje" id="mensaje_input" cols="30" rows="5" required></textarea>
+    <span class="flex">
+      <input class="btn inln default" type="submit" value="Submit" />
+      <input class="btn inln error" type="reset" value="Reset" />
+    </span>
+  </form>
+</div>
+<center>{{mensaje}}</center>

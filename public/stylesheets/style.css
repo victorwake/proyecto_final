@@ -1,0 +1,426 @@
+
+
+/*barra de navegacion*/
+@charset "UTF-8";
+.navigation {
+  height: 70px;
+  background: #1d1d1d;
+}
+
+
+
+/* .brand {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: 70px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+}
+.brand a,
+.brand a:visited {
+  color: #ffffff;
+  text-decoration: none;
+} */
+
+.nav-container {
+  max-width: 700px;
+  margin: 0 auto;
+ 
+ 
+  
+}
+
+nav {
+  
+  
+  float: right;
+  
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+  
+}
+nav ul li {
+  float: left;
+  position: relative;
+  
+}
+nav ul li a,
+nav ul li a:visited {
+  display: block;
+  padding: 0 20px;
+  line-height: 70px;
+  background: #1d1d1d;
+  color: #ffffff;
+  text-decoration: none;
+  
+}
+nav ul li a:hover,
+nav ul li a:visited:hover {
+  background: #373b3f;
+  color: #ffffff;
+}
+nav ul li a:not(:only-child):after,
+nav ul li a:visited:not(:only-child):after {
+  padding-left: 4px;
+  content: " ▾";
+}
+nav ul li ul li {
+  min-width: 190px;
+}
+nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+}
+nav ul li a.activo{
+  background-color: #2a2d30;
+}
+
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+/*fin barra de navegacion*/
+
+/* navegacion mobil */
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #1d1d1d;
+  height: 70px;
+  width: 70px;
+}
+
+@media only screen and (max-width: 798px) {
+  .nav-mobile {
+    display: block;
+    
+  }
+
+  nav {
+    width: 100%;
+    padding: 70px 0 15px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    float: none;
+  }
+  nav ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+  nav ul li ul li a {
+    padding-left: 30px;
+  }
+
+  .nav-dropdown {
+    position: static;
+  }
+}
+@media screen and (min-width: 799px) {
+  .nav-list {
+    display: block !important;
+    
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #ffffff; 
+  position: absolute;
+  display: block;
+  content: "";
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+/* fin navegacion mobil */
+
+/*bandas*/
+@import url(http://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+/* Override UGG site */
+#main {
+  width: 100%;
+  padding: 0;
+}
+
+.content-asset p {
+  margin: 0 auto;
+}
+
+.breadcrumb {
+  display: none;
+}
+
+/* Helpers */
+/**************************/
+/* .margin-top-10 {
+  padding-top: 10px;
+}
+
+.margin-bot-10 {
+  padding-bottom: 10px;
+} */
+
+/* tipografia */
+/**************************/
+#contenedor h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+
+#contenedor h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 70px;
+  letter-spacing: 10px;
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+  z-index: 10;
+  opacity: .8;
+}
+
+#contenedor h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  line-height: 0;
+  font-weight: 400;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: black;
+}
+
+#contenedor p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.first-character {
+  font-weight: 400;
+  float: left;
+  font-size: 84px;
+  line-height: 64px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.sc {
+  color: #3b8595;
+}
+
+.ny {
+  color: #3d3c3a;
+}
+
+.atw {
+  color: #c48660;
+}
+
+/* Fin tipografia */
+
+/**************************/
+
+/* Sección - Title */
+
+#contenedor .title {
+  background: rgb(255, 255, 255);
+  padding: 60px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#contenedor .title h1 {
+  font-size: 35px;
+  letter-spacing: 8px;
+}
+
+/* Fin Sección - Title */
+
+/* Sección - Block */
+/**************************/
+#contenedor .block {
+  background: rgb(218, 216, 216);
+  padding: 50px;
+  width: 820px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+#contenedor .block-gray {
+  background: #f2f2f2;
+  padding: 60px;
+}
+
+#contenedor .section-overlay-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.70;
+}
+
+/* Fin Sección - Block */
+
+/* Sección - Parallax */
+/**************************/
+#contenedor .img-1 {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url(./../images/wake.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#contenedor .img-2 {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url(./../images/headroom.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#contenedor .img-3 {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url(./../images/sdn.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#contenedor .img-home {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url("./../images/victor_home.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Fin Sección - Parallax */
+
+/* Extras */
+/**************************/
+#contenedor .line-break {
+  border-bottom: 1px solid black;
+  width: 150px;
+  margin: 0 auto;
+}
+
+/* Media Queries */
+/**************************/
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #contenedor .block {
+    padding: 40px;
+    width: 620px;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  #contenedor .block {
+    padding: 30px;
+    width: 420px;
+  }
+
+  #contenedor h2 {
+    font-size: 30px;
+  }
+
+  #contenedor .block {
+    padding: 30px;
+  }
+  #contenedor .img-home,
+  #contenedor .img-1,
+  #contenedor .img-2,
+  #contenedor .img-3 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-attachment:inherit;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  #contenedor .block {
+    padding: 30px 15px;
+    width: 290px;
+  }
+}
